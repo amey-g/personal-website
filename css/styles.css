@@ -163,4 +163,15 @@ nav{
     padding-bottom: 10px;
 }
 
+.zoom {
+  transition: transform .2s; /* Animation */
+}
+
+.zoom:hover {
+  transform: scale(1.2); 
+}
+
+#bits-logo, #sps-logo{
+  height:1.2em;
+}
   
