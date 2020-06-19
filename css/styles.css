@@ -1,5 +1,5 @@
-#mainContainer{
-    background-color: rgb(48, 47, 51);
+body{
+    background-color: dimgray;
     color: whitesmoke
 }
 
@@ -8,11 +8,11 @@ nav{
 }
 
 #profile-pic{
-    padding-top:20px;
-    padding-left: 0px;
+    padding-top:10px; 
     width: 80%;
     height: auto;
     border-radius: 50%;
+    
 }
 .icon-bar {
     width: 97%; /* Full-width */
@@ -66,6 +66,12 @@ nav{
     font-family: Ubuntu Mono;
   }
 
+  .l-4{
+    font-size: 2vw;
+    font-family: Ubuntu Mono;
+  }
+
+
   #about-container{
     padding-top: 30px;
   }
@@ -89,3 +95,72 @@ nav{
   #education{
     text-align: right;
   }
+
+  .r-1, .r-2, .r-3{
+    background-color:rgb(48, 47, 51) ;
+    margin-top: 15px;
+    margin-left: 1px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+  }
+
+  #edu{
+    font-family: Ubuntu Mono;
+  }
+
+  .line-1:after {
+    content: '';
+    width: 72%;
+    height: 2px;
+    position: absolute;
+    top: 17%;
+    right: 5%;
+    background: white;
+}
+.line-2:after {
+  content: '';
+  width: 37%;
+  height: 2px;
+  position: absolute;
+  top: 65%;
+  right: 5%;
+  background: white;
+}
+  
+  .line-3:after {
+    content: '';
+    width: 75%;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 23%;
+    background: white;
+}
+.line-4:after {
+  content: '';
+  width: 74%;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 22%;
+  background: white;
+}
+.line-5:after {
+  content: '';
+  width: 47%;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  right:4%;
+  background: white;
+}
+
+.navbar-brand{
+  font-family: Shadows Into Light;
+}
+
+.r-2{
+    padding-bottom: 10px;
+}
+
+  
