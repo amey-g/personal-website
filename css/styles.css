@@ -1,166 +1,180 @@
-body{
-    background-color: dimgray;
-    color: whitesmoke
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #181818; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(65, 65, 65); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
 }
 
 nav{
-    background-color: rgb(37, 37, 37);
+  font-family: Open Sans, Serif;
+  font-weight: 800;
+  font-size:12px;
+  letter-spacing: 0.25em;
+}
+html {
+  scroll-behavior: smooth;
 }
 
-#profile-pic{
-    padding-top:10px; 
-    width: 80%;
-    height: auto;
-    border-radius: 50%;
-    
+body{
+  position: relative;
 }
-.icon-bar {
-    width: 97%; /* Full-width */
-    background-color: #555; /* Dark-grey background */
-    overflow: auto; /* Overflow due to float */
-  }
+
+.nav-items{
+  padding-left:1%;
+  padding-right:1%;
+  width:auto;
+
+}
+
+header{
+  background-color: black;
+}
+
+li{
+  width:auto;
+  margin-right:5px;
+  margin-left:5px;
+}
+
+#main-container{
+  margin: 0px;
+  padding:0px;
+  width:100%;
+  position: relative;
+  background-color: black;
+}
+
+
+#home-container {
+  background-image: url("../images/ckt3.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #464646;
+  padding:10% 0% 0% 0%;
+  margin-left:0px;
+  margin-right:0px;
+}
+
+#photo{
+  padding: 20% 5% 20% 5%;
+  width:100%;
+  height:auto;
+  border-radius: 50%;
+}
+
+#about-text{
+  padding-top: 5%;
+  color: #cccccc;    
+}
+
+
+#name{
+  font-family: Open Sans, Serif;
+  color:#cccccc;
+  font-size:7vw;
+  padding-top:0px;
+  /* text-align: center; */
+  font-weight: bold;   
+}
+
+#bio{
+  font-family: Open Sans, Serif;
+  color:#c0c0c0;
+  font-size:1.5vw;
+  width:100%;
+  padding:2% 15% 2% 15%;  
+}
+
+p{
+  margin: 5% 0 5% 0;
+  color: grey;
+}
+
+
+.link-button{
+  padding-right: 2%;
+  padding-left: 2%;
+  color: #cccccc;
+  transition-duration: 0.5s;
+}
+
+#scroll-arrow-container{
+  margin-top: 6%;
+  padding-bottom: 6%;
+}
+
+#scroll-arrow{
+  color:#cccccc;
+}
+
+.degree{
+  font-family: 'Libre Baskerville', serif;
+  font-style: italic;
+  color:#cccccc;
+  font-size: 1.2em;
+}
+
+.year{
+  font-family: Open Sans, Serif;
+  color:#cccccc;
+  font-size: 1.2em;
+}
+
+.heading{
+  color:#cccccc;
+
+}
+.fa-circle{
+  margin-left: 2%;
+  margin-right: 2%;
+  color: #cccccc;
+  font-size: 0.5em;
+}
+
+.education-left{
+  padding-left:3%;
+}
+
+.subtitle{
+  font-size: xx-large;
+  font-weight: bold;
+  font-family: Open Sans, Serif;
+  color: #cccccc;
+  border-bottom: 3px solid cyan;
+  padding-bottom: 2px;
+}
+
+.edu-logo{
+  width:40%
   
-  .icon-bar a {
-    float:left; /* Float links side by side */
-    text-align: center; /* Center-align text */
-    width: 20%; /* Equal width (5 icons with 20% width each = 100%) */
-    padding: 12px 0; /* Some top and bottom padding */
-    transition: all 0.3s ease; /* Add transition for hover effects */
-    color: white; /* White text color */
-    font-size: 36px; /* Increased font size */
-  }
-  
-  #first-a{
-    clear:left;
-  }
-
-  .icon-bar a:hover {
-    background-color: #000; /* Add a hover color */
-  }
-
-  .fa{
-      padding:10px;
-  }
-  
-  #links-container{
-    align-content: center;
-    padding-left: 40%;
-  }
-
-  .filler{
-    height: 1000px;
-  }
-
-  .l-1{
-    font-size:4vw;
-    font-family: Ubuntu Mono;    
-  }
-
-  .l-2{
-    font-size:7vw;
-    font-family: Ubuntu Mono;
-  }
-
-  .l-3{
-    font-size: 2.5vw;
-    font-family: Ubuntu Mono;
-  }
-
-  .l-4{
-    font-size: 2vw;
-    font-family: Ubuntu Mono;
-  }
-
-
-  #about-container{
-    padding-top: 30px;
-  }
-
-  .navbar{
-    /* padding-right: 110px;
-    padding-left: 80px; */
-    font-style: italic;
-    font-family: Ubuntu Mono;
-  }
-
-  .social-media-links{
-    padding-top: 20px;
-  }
-
-  .item{
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  #education{
-    text-align: right;
-  }
-
-  .r-1, .r-2, .r-3{
-    background-color:rgb(48, 47, 51) ;
-    margin-top: 15px;
-    margin-left: 1px;
-    margin-right: 1px;
-    margin-bottom: 1px;
-  }
-
-  #edu{
-    font-family: Ubuntu Mono;
-  }
-
-  .line-1:after {
-    content: '';
-    width: 72%;
-    height: 2px;
-    position: absolute;
-    top: 17%;
-    right: 5%;
-    background: white;
-}
-.line-2:after {
-  content: '';
-  width: 37%;
-  height: 2px;
-  position: absolute;
-  top: 65%;
-  right: 5%;
-  background: white;
-}
-  
-  .line-3:after {
-    content: '';
-    width: 75%;
-    height: 2px;
-    position: absolute;
-    top: 50%;
-    left: 23%;
-    background: white;
-}
-.line-4:after {
-  content: '';
-  width: 74%;
-  height: 2px;
-  position: absolute;
-  top: 50%;
-  left: 22%;
-  background: white;
-}
-.line-5:after {
-  content: '';
-  width: 47%;
-  height: 2px;
-  position: absolute;
-  top: 50%;
-  right:4%;
-  background: white;
 }
 
-.navbar-brand{
-  font-family: Shadows Into Light;
+#bits-logo{
+  padding-top: 20%;
+  padding-bottom: 17%;
 }
 
-.r-2{
-    padding-bottom: 10px;
+.school-location{
+  font-size: large;
+  font-weight: bold;
+  font-family: Open Sans, Serif;
+  color: #cccccc;   
+  padding-bottom: 2%;
 }
 
 .zoom {
@@ -170,8 +184,3 @@ nav{
 .zoom:hover {
   transform: scale(1.2); 
 }
-
-#bits-logo, #sps-logo{
-  height:29px;
-}
-  

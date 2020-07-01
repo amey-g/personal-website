@@ -6,191 +6,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link href='https://fonts.googleapis.com/css?family=Ubuntu Mono' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+    <!-- <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'> -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Shadows Into Light' rel='stylesheet'>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+
+    <!-- Optional theme -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <title>Amey Gupta</title>
-    <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAMAAABiM0N1AAAAwFBMVEVHcEynjoGnjoGnjoGnjoFmIROnjoFjIxZ6XERlJBekin2njoGnjoGnjoGnjoGnjoGnjoGnjoGnjoF6XERmIRN6XERdNChmIRN6XER6XER6XERxQy9mIRMvNDeOZFcpLzN6XESnjoFSU1Q0ODvYyL2MbVtvbGthYGC8tbCqpqQpLzPi0seVd2acgnNmIRNuMSJERUaDZlB1QjG4opbFsKT1+PqhiHuEgH2MeXGdk43PvrR6XETl6OuRi4aIWUvJzM8IR/s7AAAAIXRSTlMA74BgQMO/gL9AEJbfIDBwz1CvgHCfYJ8wQN/P36fP34/LurInAAADFklEQVR4XuWY2XKbMBRAL0tIgsHYbpM6SdNW7Iv33Vn//68qGaFLyhIgeWin58WyZ3TuoiuGMfzXmCrA+OZmDB9C75GU6eTxCgWXlOtzyhnl+4ySClT5xHBc8AxIxmS1wm1FgNI3CGfHouaj/cgs89k7sG1SpvFe/oyz4yL0VAGzmcc9XjHMnHBqDGdn386/Xl5CbdQViqr2C2qiomhSuR8piYq8iF7P56vVHe7vLHpkXEAdIiopqV/rIprMWP53ufo7iqYlUbMJ8xqIoFcjIpxlE5H2RnT1WaIvkEP9dNHj3yKyOol2RZFcIuorMkVRq0WkgcjsSSRjYJl1oosa0W0qRjS1m2hCCoz0EtGyXoSePJLaWrRki/Vms16/VSkFkVcv8oJFzLCPycO6aOIifFZUimLBIkzcvEr9QzQtEWHVp3ScIDh9uEk+K8lEETZJrxA5rKqn7TZipueEssExQBHWdlMm8tLKwi3Fpot9wsD6FCHCS3JdJpqkolcmCoQIkzLEExJT+lUuWjKRTz1PbHFMOA8iJR4WS7gFZJg7h5jhhxFr+sJNMlx+8YQITWMUqbmiAzvOcMJME4aZyUQRj728yovw2KZuEu2ZbeE/cM2zQ79FaXWKEKFKVlGEmXp8u7t/5is/PuGfOi5j2DyG1pOHJgDJdXudemhOzunQophzZIIRiopIo3zzpm7g03Jihk27FIiWsXHSmKghOzbRacv5yom2r/TDp4IegE6aQk8+tEVBdBWlc+VQgQUApDFO7AiR7eOkH07HD0Zj0cGJBfuI3z36W0A0vGyN8IXJdmm3F6/bpz37Qvp42drl5LMnkrAuFLyaTdnZ6Z17M0n3OL8tOPBHN872OaTopCUHmxXFxzz+ie+KBmnN9HDcUIhzfw3IiHRhJMuWqkMeq5OoDwX6XTwGlGB0EMnlb8itkXSAT6nNAviU2gZQjtK2MBPK0aV2nsLRdxylIVQzaJFPnQf6Ure6uvd7gJ4PmXo6vIsqvZ+O2vSfmVoMBZpi1qhGQ2iDaQ1KLYoOrdGHsmbgaWs9S4V/kd8VnNRrAvWhDgAAAABJRU5ErkJggg==" />
+    <link rel="shortcut icon" type="image/png" href="images/site-logo-transparent-crop.png" />
   </head>
-  <body>
-
-    <nav class="navbar navbar-expand-lg navbar navbar-expand-md navbar navbar-expand-sm navbar-dark ">
-        <a class="navbar-brand zoom" href="#">AMEY GUPTA</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul id="nav-items" class="navbar-nav ml-auto">
-            <li class="nav-item active item">
-              <a class="nav-link zoom" href="#">Bio<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item item">
-              <a class="nav-link zoom" href="#edu">Education</a>
-            </li>
-            <li class="nav-item item">
-              <a class="nav-link zoom" href="docs/testresume.pdf" target="_blank">Resume</a>
-            </li>
-            <li class="nav-item item">
-                <a class="nav-link zoom" href="blog/blog-home.html" target="_blank">My Blog</a>
-            </li>
-            <li class="nav-item item">
-                <a class="nav-link zoom" href="#Contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-    </nav>
-        
-    <div id = "mainContainer"class = "container-fluid" >
-      
-      <div class="row r-1">
-        
-        
-        
-        <div id="about-container" class= "col-lg-7 col-md-7">
-          <div id="hey" class = "l-1"><span>HELLO</span><span class="line-1"></span></div>
-          <div id="hey2" class = "l-2">I AM AMEY GUPTA</div>
-          <div id="hey3" class = "l-3"><span>LEARNING WEB DEVELOPMENT</span><span class="line-2"></span></div>
-          <div class="social-media-links">
-            <p class="icon-bar text-center">
-              <a id="first-a" href="https://www.instagram.com/theameygupta/"><i class="fa fa-instagram zoom"></i></a>
-              <a href="https://github.com/amey-g"><i class="fa fa-github zoom"></i></a>
-              <a href="mailto:ameygpta@gmail.com"><i class="fa fa-envelope zoom"></i></a>
-              <a href="https://www.linkedin.com/in/ameygupta/"><i class="fa fa-linkedin zoom"></i></a>
-              <a href="https://stackoverflow.com/users/13139386/amey-gupta"><i class="fa fa-stack-overflow zoom"></i></a>
-            </p>
-          </div>
-        </div>
-        
-        <div class="text-center col-lg-5 col-md-5">
-          <img id="profile-pic" src="images/bits-hoodie-dp.jpeg" class="img-fluid" alt="Responsive image">
-        </div>
-
-        
-        
-        
-
-        
   
-        <!-- <div class="filler">filler</div> -->
-      </div>
+  
+  
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+        <header class="fixed-top">
+            <nav id="navbar" class="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm navbar-dark ">
+                    
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul id="nav-items" class="navbar-nav mx-auto">
+                    <li class="nav-item item">
+                        <a class="nav-link " href="#home-container">HOME</a>
+                    </li>
+                    <li class="nav-item item">
+                    <a class="nav-link" href="#about-container">ABOUT</a>
+                    </li>
+                    <li class="nav-item item">
+                    <a class="nav-link " href="#resume-container"">EDUCATION</a>
+                    </li>
+                    <li class="nav-item item">
+                        <a class="nav-link " href="blog/blog-home.html" target="_blank">PROJECTS & INTERESTS</a>
+                    </li>
+                    <li class="nav-item item">
+                        <a class="nav-link " href="blog/blog-home.html" target="_blank">BLOG</a>
+                    </li>
+                    <li class="nav-item item">
+                        <a class="nav-link " href="#Contact">CONTACT</a>
+                    </li>
+                </ul>
+                </div>
+            </nav>
+        </header> 
 
-      <div class="row r-2" >
-        <div  class="l-1 col-lg-12 col-md-12">
-          <span id="edu">EDUCATION</span>
-          <span class="line-4"></span>
-        </div>
-        <div class="l-4 col-lg-4 col-md-4">
-          <span><a target="_blank" href="https://www.bits-pilani.ac.in/Pilani/index.aspx" ><img class="zoom"id="bits-logo" src="images/bits-logo.png" class="img-fluid" alt="Responsive image"></a></span>
-          <span>BITS PILANI, RAJASTHAN</span>
-        </div>
-        <div class="l-4 col-lg-8 col-md-8">
-          - BE(HONS.), ELECTRONICS AND INSTRUMENTATION ENGINEERING
-        </div>
-        <div class="l-4 col-lg-4 col-md-4">
-          <span><a target="_blank"href="https://www.springdalespusa.com/" ><img class="zoom"id="sps-logo" src="images/sps-logo.png"  class="img-fluid" alt="Responsive image"></a></span>
-          <span>SPRINGDALES SCHOOL, DELHI</span>
-        </div>
-        <div class="l-4 col-lg-8 col-md-8">
-          - CLASS XII (SCIENCE)
-        </div>
-        <div class="l-4 col-lg-4 col-md-4">
-          
-        </div>
-        <div class="l-4 col-lg-8 col-md-8">
-          - CLASS X
-        </div>
+        <div id="main-container"  class="container-fluid">
+            <div id="home-container" class="container-fluid">
+                <div id="name-container" class="text-center">
+                    <div id="name">Amey Gupta</div>
+            
+                    <div id="bio" class="text-center">I'm a undergraduate student in Electronics and Instrumentation Engineering, with a special interest in IoT and Web Development</div>
+                            
+                    <div class="social-media-links">
+                        <p class="icon-bar text-center">
+                            <a id="first-a" class="link-button" href="https://www.instagram.com/theameygupta/"><i class="fa fa-2x fa-instagram zoom"></i></a>
+                            <a class="link-button" href="https://github.com/amey-g"><i class="fa fa-2x fa-github zoom"></i></a>
+                            <a class="link-button" href="mailto:ameygpta@gmail.com"><i class="fa fa-2x fa-envelope zoom"></i></a>
+                            <a class="link-button" href="https://www.linkedin.com/in/ameygupta/"><i class="fa fa-2x fa-linkedin zoom"></i></a>
+                        </p>
+                    </div>
+            
+                    <div id="scroll-arrow-container"><a id="scroll-arrow" href="#about-container"><i class="fa fa-2x fa-chevron-circle-down"></i></a></div>
+                    
+                </div>
+            </div>
+            
+            <div id="about-container" class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3">
+                        <img id="photo" src="images/default-profpic.png">
+                    </div>
+                    <div id="about-text" class="col-lg-9 col-md-9">
+                        <h2 class="subtitle">About Me</h2>
+                        <p>
+                            Hello! I'm Amey Gupta a freshmen at BITS Pilani pursuing a Engineering Undergrad in Electronics. I am and have always been deeply interested in the fields of Electronics and Computer Science. 
+                        </p>
+                        <p>
+                            I am from Delhi, India. I used to be a speedcuber in School and loved solving puzzles and overcoming challenges. This website was built to test out my frontend web development skills without using any framework. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+            
+            <div id="resume-container" class="container-fluid">
+                <div class="row">
+                    
+                    <div id="edu-text" class="col-lg-9 col-md-9 education-left">
+                        <h3 class="subtitle">Education</h3>
+                        <p>
+                            <h3 class="heading">Birla Institute of Technology and Science</h3>
+                            <h4 class="school-location">Pilani, Rajasthan</h4>
+                            <span class="degree">Bachelor of Engineering in Electronics and Instrumentation</span><i class="fa-xs fa fa-circle"></i><span class="year">Class of 2023</span>
+                        </p>
+                        <p>
+                            <h3 class="heading">Springdales School</h3>
+                            <h4 class="school-location">New Delhi, Delhi</h4>
+                            <span class="degree">XII (Science)</span><i class="fa-xs fa fa-circle"></i><span class="year">Class of 2019</span>
+                        </p>
+                    </div>
 
-      </div>
+                    <!-- <div id="education-logos" class="col-lg-3 col-md-3 heading text-center">
+                        <div><img class="edu-logo" id="bits-logo" src="images/bits-logo.png"></div>
+                        <div><img class="edu-logo" id="sps-logo" src="images/sps-logo.png"></div>
+                    </div> -->
+                    
+                </div>
+            </div>
 
-      <div class="row r-3">
-        <div  class="l-1 col-lg-12 col-md-12">
-          <div id="edu"><span>TOOLS AND TECHNOLOGIES</span><span class="line-5"></span></div>
+            <div id="projects-container" class="container-fluid">
+                   
+            </div>
+
+            <div id="contact-container" class="container-fluid">
+                   
+            </div>       
+    
         </div>
         
-        <div class="l-4 col-lg-8 col-md-8">
-          HTML5 AND CSS3
-        </div>
-        <div class="l-4 col-lg-4 col-md-4">
-          <span class="fa fa-star"></span>
-          <span class="fa fa-star"></span>
-          <span class="fa fa-star"></span>
-          <span class="fa fa-star"></span>
-        </div>
-        <div class="l-4 col-lg-8 col-md-8">
-          C++
-        </div>
-        <div class="l-4 col-lg-4 col-md-4">
-          <span class="fa fa-star"></span>
-          <span class="fa fa-star"></span>
-          <span class="fa fa-star"></span>
-          <span class="fa fa-star"></span> 
-        </div>
-        <div class="l-4 col-lg-8 col-md-8">
-          C
-        </div>
-        <div class="l-4 col-lg-4 col-md-4">
-          <span class="fa fa-star"></span>
-          <span class="fa fa-star"></span>
-          <span class="fa fa-star"></span>
-          <span class="fa fa-star"></span>
-        </div>
-        <div class="l-4 col-lg-8 col-md-8">
-          PYTHON
-        </div>
-        <div class="l-4 col-lg-4 col-md-4">
-          <span class="fa fa-star"></span>
-          <span class="fa fa-star"></span>
-          <span class="fa fa-star"></span>
-          <span class="fa fa-star-half"></span>
-        </div>
-        <div class="l-4 col-lg-8 col-md-8">
-          JAVASCRIPT (ES6+)
-        </div>
-        <div class="l-4 col-lg-4 col-md-4">
-          <span class="fa fa-star"></span>
-          <span class="fa fa-star"></span>
-          <span class="fa fa-star"></span> 
-        </div>
-        <div class="l-4 col-lg-8 col-md-8">
-          NODE JS
-        </div>
-        <div class="l-4 col-lg-4 col-md-4">
-          <span class="fa fa-star"></span>
-          <span class="fa fa-star"></span>
-          <span class="fa fa-star"></span> 
-        </div>
+        <footer>
+            hello
+        </footer>
 
-        
-      <div>
-
-      </div>
-
-      </div>
-      
-    </div>
+    </body>
 
 
-
-    <!-- Add icon library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-    <div class="container-fluid text-center" id="links-container"></div>
-
-    
-    
-
-      
-
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-  </body>
 </html>
