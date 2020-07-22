@@ -33,3 +33,16 @@ body{
     padding-top:2%;
     text-align: left;
 }
+
+.blog-link{
+    text-decoration: none;
+    color: grey !important;
+}
+
+.zoom {
+    transition: transform .2s; /* Animation */
+  }
+  
+  .zoom:hover {
+    transform: scale(1.01); 
+  }
